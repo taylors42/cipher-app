@@ -1,14 +1,21 @@
-alphabet = [ "a","b","c","d","e","f","g","h","i","j","k",
-"l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-let palavraFinal = "";
-const cifra = (word, key) => 
-{
-  for (x of word) 
-  {
-      if ((alphabet.indexOf(x) + key ) >= 26){ 
-        palavraFinal = palavraFinal + alphabet[(alphabet.indexOf(x) + key - 26 )]
-      } else {  
-      palavraFinal = palavraFinal + alphabet[alphabet.indexOf(x) + key] }
+const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+let finalWord = "";
+const criptograf = (word, rotate) => {
+  word.toLowerCase();
+  if (word === " ") {
+    word += " ";
+  }
+  if (rotate < 0) {
+    rotate = rotate / -1;
+    rotate = 26 - rotate;
+  }
+
+  for (index of word) {
+    if (alphabet.indexOf(index) + rotate >= 26) {
+      finalWord = finalWord + alphabet[alphabet.indexOf(index) + rotate - 26];
+    } else {
+      finalWord = finalWord + alphabet[alphabet.indexOf(index) + rotate];
     }
-    console.log(palavraFinal)
-}
+  }
+  console.log(finalWord);
+};
