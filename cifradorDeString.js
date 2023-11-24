@@ -1,6 +1,17 @@
 const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
-let finalWord = "";
-const criptograf = (word, rotate) => {
+let word = document.querySelector("#cript-text").value;
+let textt = document.querySelector("#cript-text");
+let rotate = document.querySelector("#rotate").value;
+const button = document.querySelector("button");
+rotate = rotate * 1;
+let finalWord;
+button.addEventListener("click", function () {
+  const final = criptograf(word, rotate);
+  textt.value = final;
+});
+
+function criptograf(word, rotate) {
+  finalWord = "";
   word.toLowerCase();
   if (word === " ") {
     word += " ";
@@ -17,5 +28,5 @@ const criptograf = (word, rotate) => {
       finalWord = finalWord + alphabet[alphabet.indexOf(index) + rotate];
     }
   }
-  console.log(finalWord);
-};
+  return finalWord;
+}

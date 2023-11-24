@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cifrador</title>
+    <script src="/cifradorDeString.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <label for="Title">Type to Code/Decode</label>
+        <textarea
+          id="cript-text"
+          name="story"
+          rows="5"
+          cols="33"
+          placeholder="lorem..."
+        ></textarea>
+      </div>
+      <div class="bottons">
+        <div>
+          <textarea id="rotate" rows="01" cols="1"></textarea>
+          <button type="submit">Code the phrase</button>
+        </div>
+        <label for="rotate">Write the rotation number</label>
+      </div>
+    </main>
+  </body>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      background-color: rgb(224, 224, 224);
+    }
+    .container {
+      height: 200px;
+      width: 500px;
+      margin-top: 9rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container label {
+      margin-bottom: 1rem;
+    }
+    .container #rotate {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .container textarea {
+      resize: none;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 2px #3d3d3d;
+      border: 1px solid #ccc;
+    }
+    .bottons {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .bottons div {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .bottons label {
+      margin-top: 1rem;
+    }
+    .bottons textarea {
+      resize: none;
+    }
+    .bottons button {
+      background: #ffffff;
+      color: rgb(0, 0, 0);
+      border-style: outset;
+      border-color: #000000;
+      height: 50px;
+      width: 100px;
+      border-radius: 0.3rem;
+      text-shadow: none;
+    }
+  </style>
+</html>
