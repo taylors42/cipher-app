@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+:root {
+  --sub-tittle: 1.5rem;
+  --f-tittle: 2.5rem;
+  --my-gray: rgb(60, 60, 60);
+  --top-gray: rgb(44, 44, 44);
+  --top-font: 5rem;
+}
+html {
+  font-family: "Heebo", sans-serif;
+  font-family: "Jost", sans-serif;
+}
+.wrapper {
+  margin: 3rem auto;
+  max-width: 1200px;
+  padding: 0rem 4rem;
+  z-index: 1;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 aut;
+}
+.title {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+.text {
+  width: 800px;
+  transition: 0.4s;
+  text-align: center;
+  font-size: 1.2rem;
+}
+button {
+  margin-top: 2rem;
+  background-color: #000000;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 16px 31px;
+  font-weight: 800;
+  font-size: 15px;
+  width: 110px;
+  height: 55px;
+  transition: 0.8s;
+  justify-content: center;
+  padding: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 830px) {
+  .title {
+    text-align: center;
+  }
+  .text {
+    transition: 0.4s;
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .text {
+    transition: 0.4s;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .text {
+    transition: 0.4s;
+    width: 200px;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="top-title">The Cipher</title>
+    <script src="/index.js" defer></script>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <label for="title" class="title">Type to Code/Decode</label>
+        <textarea
+          id="cript-text"
+          name="story"
+          rows="5"
+          cols="33"
+          placeholder="Write the text to code or decode"
+        ></textarea>
+      </div>
+      <div class="bottons">
+        <div>
+          <textarea id="rotate" rows="01" cols="1"></textarea>
+          <button type="submit" class="codedecode">Code/Decode</button>
+        </div>
+
+        <label for="rotate" class="rotateText"
+          >Write the rotation number of the cipher</label
+        >
+        <a href="help-page/help.html" class="help">How use the Cipher</a>
+        <button type="submit" class="translate" onclick="translatePage()">
+          translate
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
