@@ -12,31 +12,40 @@
   --top-gray: rgb(44, 44, 44);
   --top-font: 5rem;
 }
+
 html {
   font-family: "Heebo", sans-serif;
   font-family: "Jost", sans-serif;
 }
+
 .wrapper {
   margin: 3rem auto;
   max-width: 1200px;
   padding: 0rem 4rem;
   z-index: 1;
 }
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 aut;
 }
+
 .title {
   margin-bottom: 3rem;
   font-size: 3rem;
 }
+
 .text {
   width: 800px;
   transition: 0.4s;
   text-align: center;
   font-size: 1.2rem;
+}
+#rotate {
+  background-color: #ff0000;
+  color: #ff0000;
 }
 button {
   margin-top: 2rem;
@@ -57,10 +66,12 @@ button {
   justify-content: center;
   align-items: center;
 }
+
 button:hover {
   transition: 0.5s;
   transform: scale(1.1);
 }
+
 @media only screen and (max-width: 830px) {
   .title {
     text-align: center;

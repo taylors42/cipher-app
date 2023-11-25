@@ -4,7 +4,7 @@ let isPT = true;
 
 button.addEventListener("click", () => {
   let word = document.querySelector("#cript-text").value;
-  let rotate = document.querySelector("#rotate");
+  let rotate = document.querySelector("#number-rotate");
   console.log(word);
   console.log(rotate);
   word = word.toLowerCase();
@@ -30,6 +30,12 @@ button.addEventListener("click", () => {
   }
   document.querySelector("#cript-text").value = finalWord;
 });
+
+let select = document.querySelector("#number-rotate");
+
+for (let i = 1; i <= 26; i++) {
+  select.innerHTML += `<option value="${i}">${i}</option>`;
+}
 
 function translatePage() {
   let button = document.querySelector(".translate");

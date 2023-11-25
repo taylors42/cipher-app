@@ -54,17 +54,25 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.ajust {
+  display: flex;
+  align-items: center;
+}
+
+#number-rotate {
+  border-color: #000000;
+}
 button {
   margin-top: 2rem;
   background-color: #000000;
   border-radius: 10px;
-  display: inline-block;
   cursor: pointer;
+  display: flex;
   color: #ffffff;
   padding: 16px 31px;
   font-weight: 800;
   font-size: 15px;
-  width: 110px;
+  width: 130px;
   height: 55px;
   transition: 0.8s;
   justify-content: center;
@@ -73,10 +81,15 @@ button {
   justify-content: center;
   align-items: center;
 }
+.ajust {
+  display: flex;
+  align-items: center;
+}
 button:hover {
   transition: 0.5s;
   transform: scale(1.1);
 }
+
 .bottons div {
   display: flex;
   align-items: center;
@@ -89,17 +102,6 @@ button:hover {
 
 .bottons textarea {
   resize: none;
-}
-
-.bottons button {
-  background: #ffffff;
-  color: rgb(0, 0, 0);
-  border-style: outset;
-  border-color: #000000;
-  height: 50px;
-  width: 100px;
-  border-radius: 0.3rem;
-  text-shadow: none;
 }
 
 .help {
