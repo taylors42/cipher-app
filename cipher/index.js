@@ -4,7 +4,7 @@ let isPT = true;
 
 button.addEventListener("click", () => {
   let word = document.querySelector("#cript-text").value;
-  let rotate = document.querySelector("#rotate").value;
+  let rotate = document.querySelector("#rotate");
   console.log(word);
   console.log(rotate);
   word = word.toLowerCase();
@@ -28,7 +28,7 @@ button.addEventListener("click", () => {
       finalWord = finalWord + alphabet[alphabet.indexOf(index) + rotate];
     }
   }
-  document.querySelector("#cript-text").value = finalWord.value;
+  document.querySelector("#cript-text").value = finalWord;
 });
 
 function translatePage() {
