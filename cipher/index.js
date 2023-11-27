@@ -5,6 +5,7 @@ let isPT = true;
 button.addEventListener("click", () => {
   let word = document.querySelector("#cript-text").value;
   let rotate = document.querySelector("#number-rotate");
+
   console.log(word);
   console.log(rotate);
   word = word.toLowerCase();
@@ -44,7 +45,7 @@ function translatePage() {
     document.querySelector(".top-title").textContent = "Cifrador";
     document.querySelector(".title").textContent =
       "Digite para Codificar/Decodificar";
-    document.querySelector(".codedecode").style.width = "130px";
+    document.querySelector(".codedecode").style.width = "180px";
     document.querySelector(".codedecode").textContent = "codificar/decodificar";
     document.querySelector("#cript-text").placeholder =
       "Escreva o codigo para codificar ou decodificar";
@@ -55,9 +56,9 @@ function translatePage() {
   } else {
     button.textContent = "english";
     document.querySelector(".top-title").textContent = "The Cipher";
-    document.querySelector(".codedecode").style.width = "100px";
+    document.querySelector(".codedecode").style.width = "140px";
     document.querySelector(".title").textContent = "Type to Code/Decode";
-    document.querySelector(".codedecode").textContent = "code/decode";
+    document.querySelector(".codedecode").textContent = "code/Encode";
     document.querySelector("#cript-text").placeholder =
       "Write the text to code or decode";
     document.querySelector(".rotateText").textContent =
