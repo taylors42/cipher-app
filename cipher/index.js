@@ -34,7 +34,7 @@ button.addEventListener("click", () => {
 
 let select = document.querySelector("#number-rotate");
 
-for (let i = 1; i <= 26; i++) {
+for (let i = -25; i <= 26; i++) {
   select.innerHTML += `<option value="${i}">${i}</option>`;
 }
 
